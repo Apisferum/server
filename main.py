@@ -183,7 +183,7 @@ app = FastAPI(title="Chord AI Backend", version="1.3.4", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
